@@ -1,0 +1,14 @@
+@import "./../../node_modules/normalize.scss/normalize.scss";
+
+//Global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/font-size.scss";
+@import "global/colors.scss";
+@import "global/style-components.scss";
+
+//Blocks
+
+@import "blocks/body.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/wysiwyg-wrapper.scss";

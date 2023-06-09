@@ -1,0 +1,55 @@
+.wysiwyg-wrapper {
+  h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: var(--el-main-indent);
+    font-size: var(--fz-main-header);
+    font-weight: var(--fw-main);
+    line-height: var(--lh-main);
+    box-sizing: border-box;
+  }
+  h2 {
+    padding: 0px 16px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: fit-content;
+    text-transform: uppercase;
+    color: var(--cl-accent-dark);
+    background: var(--cl-highlight);
+    text-align: center;
+    box-shadow: var(--el-shadow);
+  }
+  h3 {
+    line-height: var(--lh-main);
+    color: var(--cl-accent-dark);
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: var(--el-main-indent);
+    font-weight: var(--fw-secondary);
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: var(--el-main-indent);
+  }
+  ul {
+    padding-left: var(--el-secondary-indent);
+    margin-top: 0;
+    margin-bottom: var(--el-main-indent);
+    list-style: none;
+  }
+  li {
+    position: relative;
+  }
+  li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--el-secondary-indent));
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--cl-bright);
+  }
+}
