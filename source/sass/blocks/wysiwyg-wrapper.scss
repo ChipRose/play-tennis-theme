@@ -32,17 +32,20 @@
     margin-top: 0;
     margin-bottom: var(--el-main-indent);
   }
+  ol,
   ul {
     padding-left: var(--el-secondary-indent);
     margin-top: 0;
     margin-bottom: var(--el-main-indent);
+  }
+  ul {
     list-style: none;
   }
   li {
     position: relative;
   }
-  li::before {
-    content: '';
+  ul > li::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: calc(-1 * var(--el-secondary-indent));

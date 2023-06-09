@@ -1,8 +1,13 @@
 body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: auto;
+  min-width: $mobile-width;
+  min-height: 100%;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: var(--fz-main);
   line-height: var(--lh-main);
   font-weight: var(--fw-main);
   color: var(--cl-main);
-  background: var(--cl-secondary);
 }
