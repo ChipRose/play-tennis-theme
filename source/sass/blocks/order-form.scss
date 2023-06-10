@@ -1,0 +1,45 @@
+.order-form label {
+  display: block;
+  text-align: center;
+}
+
+.order-form .wpcf7-text {
+  @include form-field;
+}
+
+.order-form .wpcf7-select {
+  @include form-field;
+  text-align-last: center;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 71%;
+  background-position-y: 7px;
+}
+
+.order-form .cf7md-item {
+  margin-bottom: var(--el-secondary-indent);
+}
+
+.order-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.order-form__column-wrapper {
+  margin: 0 calc(-1 * var(--el-main-indent));
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.order-form__column-item {
+  flex: 1 1 30%;
+  min-width: calc(300px - 2 * var(--el-secondary-indent));
+  padding: var(--el-main-indent);
+}
+
+.order-form__column-item p {
+  margin: 0;
+}

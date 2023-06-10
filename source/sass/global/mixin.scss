@@ -26,3 +26,24 @@
   margin-top: 0;
   margin-bottom: var(--el-main-indent);
 }
+
+@mixin form-field {
+  padding: var(--el-main-indent);
+  width: 100%;
+  min-height: 35px;
+  border-radius: 4px;
+  background: var(--cl-contrast);
+  box-shadow: 0 0 0 1px var(--cl-accent);
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: box-shadow var(--el-transition);
+  text-align: center;
+  &:hover {
+    border-color: var(--cl-accent);
+    box-shadow: 0 0 0 2px var(--cl-accent);
+  }
+  &::placeholder {
+    opacity: 0.4;
+  }
+}

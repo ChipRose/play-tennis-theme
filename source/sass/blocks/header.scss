@@ -1,4 +1,10 @@
 .header {
+  color: var(--cl-contrast);
   background: var(--cl-accent);
   box-shadow: 0 -5px 0 var(--cl-accent-dark) inset;
+}
+
+.header__wrapper {
+  padding-top: var(--el-secondary-indent);
+  padding-bottom: var(--el-secondary-indent);
 }

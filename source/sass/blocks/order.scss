@@ -1,0 +1,8 @@
+.order h2 {
+  @include main-title;
+}
+
+.order__wrapper{
+  padding-top: var(--el-secondary-indent);
+  padding-bottom: var(--el-secondary-indent);
+}

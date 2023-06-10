@@ -11,11 +11,13 @@
 
 <body class="body">
   <header class="header">
-
+    <div class="wrapper header__wrapper">
+      <span>Menu</span>
+    </div>
   </header>
   <main class="main">
     <section class="intro">
-      <div class="wrapper">
+      <div class="wrapper intro__wrapper">
         <div class="wysiwyg-wrapper">
           <h2>О теннисе</h2>
           <h3>теннис для детей</h3>
@@ -152,6 +154,41 @@
               </article>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="wrapper order__wrapper">
+        <h2>Заказать звонок</h2>
+        <div class="order-form">
+          <div class="wpcf7">
+            <form action="" class="wpcf7-form">
+              <div class="order-form__column-wrapper">
+                <div class="order-form__column-item">
+                  <div class="cf7md-item">
+                    <label for="input-1">Ваше имя</label>
+                    <input type="text" class="wpcf7-text" id="input-1" placeholder="Иван Николаев">
+                  </div>
+                </div>
+                <div class="order-form__column-item">
+                  <div class="cf7md-item">
+                    <label for="input-2">Номер телефона</label>
+                    <input type="text" class="wpcf7-text" id="input-2" placeholder="+7 (999) 999-99-99">
+                  </div>
+                </div>
+                <div class="order-form__column-item">
+                  <p>
+                    <label for="select-1">Удобное время для звонка</label>
+                    <select name="" id="select-1" class="wpcf7-select">
+                      <option value="">9:00 - 12:00</option>
+                      <option value="">12:00 - 15:00</option>
+                      <option value="">15:00 - 18:00</option>
+                    </select>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
