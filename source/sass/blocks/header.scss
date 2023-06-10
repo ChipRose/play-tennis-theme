@@ -7,4 +7,6 @@
 .header__wrapper {
   padding-top: var(--el-secondary-indent);
   padding-bottom: var(--el-secondary-indent);
+  display: flex;
+  justify-content: space-between;
 }
