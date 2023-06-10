@@ -6,13 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Играй в теннис</title>
+  <link rel="icon" href="favicon.ico" />
   <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="body">
   <header class="header">
     <div class="wrapper header__wrapper">
-      <span>Menu</span>
+      <nav class="menu-primary-container">
+        <ul class="menu js-menu-toggle" id="menu-primary">
+          <li class="menu-item current-menu-item">
+            <a href="#">О теннисе</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Группы</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Тренер</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="main">

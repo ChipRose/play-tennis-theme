@@ -56,6 +56,7 @@ const plugins = () => {
         { from: path.resolve(__dirname, 'source/fonts'), to: 'fonts', noErrorOnMissing: true },
         { from: path.resolve(__dirname, 'source/json'), to: 'json', noErrorOnMissing: true },
         { from: path.resolve(__dirname, 'source/img'), to: 'img', noErrorOnMissing: true },
+        { from: path.resolve(__dirname, 'source/*.ico'), to: 'source', noErrorOnMissing: true },
       ],
     }),
     new HTMLPlugin({
