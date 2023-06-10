@@ -1,0 +1,13 @@
+.groups-list {
+  padding: 0;
+  margin: 0 calc(-1 * var(--el-secondary-indent));
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.groups-list__item {
+  flex: 0 1 auto;
+  padding: var(--el-secondary-indent) var(--el-secondary-indent) var(--el-main-indent);
+}

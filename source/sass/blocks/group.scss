@@ -1,0 +1,26 @@
+.group {
+  max-width: 500px;
+}
+
+.group__image-block {
+  margin-bottom: var(--el-secondary-indent);
+  width: 100%;
+  height: 400px;
+  background: var(--cl-highlight);
+}
+
+.group__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-indent: -100vw;
+}
+
+.group__text-block h3{
+  @include subtitle;
+  text-align: center;
+}
+
+.group__text-block p {
+  @include paragraph;
+}

@@ -1,27 +1,9 @@
 .wysiwyg-wrapper {
-  h2,
-  h3 {
-    margin-top: 0;
-    margin-bottom: var(--el-main-indent);
-    font-size: var(--fz-main-header);
-    font-weight: var(--fw-main);
-    line-height: var(--lh-main);
-    box-sizing: border-box;
-  }
   h2 {
-    padding: 0px 16px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: fit-content;
-    text-transform: uppercase;
-    color: var(--cl-accent-dark);
-    background: var(--cl-highlight);
-    text-align: center;
-    box-shadow: var(--el-shadow);
+    @include main-title;
   }
   h3 {
-    line-height: var(--lh-main);
-    color: var(--cl-accent-dark);
+    @include subtitle
   }
   h4 {
     margin-top: 0;
@@ -29,8 +11,7 @@
     font-weight: var(--fw-secondary);
   }
   p {
-    margin-top: 0;
-    margin-bottom: var(--el-main-indent);
+    @include paragraph;
   }
   ol,
   ul {

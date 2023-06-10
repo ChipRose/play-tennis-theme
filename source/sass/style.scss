@@ -5,13 +5,21 @@
 @import "global/variables.scss";
 @import "global/font-size.scss";
 @import "global/colors.scss";
+@import "global/mixin.scss";
 @import "global/style-components.scss";
 
 //Blocks
 
+@import "blocks/wrapper.scss";
 @import "blocks/page.scss";
 @import "blocks/body.scss";
+@import "blocks/header.scss";
 @import "blocks/main.scss";
-@import "blocks/wrapper.scss";
+@import "blocks/footer.scss";
 @import "blocks/wysiwyg-wrapper.scss";
 @import "blocks/wp-block-seperator.scss";
+@import "blocks/groups.scss";
+@import "blocks/groups-list.scss";
+@import "blocks/group.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
