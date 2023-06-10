@@ -32,3 +32,8 @@
     border-radius: 5px;
   }
 }
+
+.social-list__item a * {
+  max-width: 30px;
+  max-height: 30px;
+}
