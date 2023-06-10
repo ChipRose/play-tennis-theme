@@ -1,4 +1,5 @@
 .order-form label {
+  margin-bottom: var(--el-main-indent);
   display: block;
   text-align: center;
 }
@@ -23,6 +24,7 @@
 
 .order-form form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -42,4 +44,79 @@
 
 .order-form__column-item p {
   margin: 0;
+}
+
+.order-form .wpcf7-list-item input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.order-form .wpcf7-list-item-label {
+  padding-left: 36px;
+  margin-bottom: var(--el-main-indent);
+  position: relative;
+  cursor: pointer;
+}
+
+.order-form .wpcf7-list-item-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: var(--cl-bright);
+  border-radius: 4px;
+}
+
+.order-form .wpcf7-list-item input[type="checkbox"]:checked ~ .wpcf7-list-item-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid var(--cl-contrast);
+  border-left: 2px solid var(--cl-contrast);
+  transform: rotate(-45deg);
+  background-image: url("img/icon-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.order-form .wpcf7-submit {
+  background: var(--cl-accent);
+  padding: var(--el-main-indent) var(--el-secondary-indent);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--cl-contrast);
+  border: none;
+  box-sizing: border-box;
+  transition: box-shadow var(--el-transition);
+  &:hover{
+    box-shadow: 0 0 0 2px var(--cl-secondary), 0 0 0 4px var(--cl-accent);
+  }
+}
+
+.order-form__submit-wrapper {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: var(--el-main-indent);
+}
+
+.order-form__text {
+  margin-top: 0;
+  margin-bottom: var(--el-main-indent);
+  text-align: center;
+  opacity: 0.3;
 }
