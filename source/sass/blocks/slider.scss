@@ -1,0 +1,7 @@
+.slider {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+}
