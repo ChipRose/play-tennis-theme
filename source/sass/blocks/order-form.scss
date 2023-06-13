@@ -1,5 +1,4 @@
 .order-form label {
-  margin-bottom: var(--el-main-indent);
   display: block;
   text-align: center;
 }
@@ -112,6 +111,9 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: var(--el-main-indent);
+  .wpcf7-spinner {
+    display: none;
+  }
 }
 
 .order-form__text {
