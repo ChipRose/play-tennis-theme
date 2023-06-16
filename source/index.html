@@ -38,7 +38,7 @@
   </header>
   <main class="main">
     <section class="intro">
-      <div class="wrapper intro__wrapper">
+      <div class="wrapper">
         <div class="wysiwyg-wrapper">
           <h2>О теннисе</h2>
           <h3>теннис для детей</h3>
@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="coach-info">
+    <section class="extra-info">
       <div class="wrapper">
         <div class="wysiwyg-wrapper">
           <h2>тренер</h2>
@@ -99,77 +99,130 @@
     </section>
     <section class="groups">
       <div class="wrapper">
-        <div class="groups__wrapper">
-          <h2>Группы</h2>
-          <div class="swiper slider">
-            <div class="groups-list swiper-wrapper slider__wrapper">
-              <div class="groups-list__item swiper-slide">
-                <article class="group">
-                  <div class="group__image-block">
-                    <img src="img/groups/img-14.jpg" alt="">
-                  </div>
-                  <div class="group__text-block">
-                    <h3 class="group__title">малыши. pre-теннис.</h3>
-                    <h3 class="group__title">возраст 3-5 лет</h3>
-                    <p class="group__text">Дети получат основные навыки с ракеткой и мячом, а обучение навыкам проходит
-                      в
-                      игровой форме. Так же дети научатся работать в команде и паре.
-                    </p>
-                  </div>
-                </article>
-              </div>
-              <div class="groups-list__item swiper-slide">
-                <article class="group">
-                  <div class="group__image-block">
-                    <img src="img/groups/img-0.jpg" alt="">
-                  </div>
-                  <div class="group__text-block">
-                    <h3 class="group__title">дети.</h3>
-                    <h3 class="group__title">возраст 5-7 лет</h3>
-                    <p class="group__text">Дети получат основные навыки с ракеткой и мячом, а обучение навыкам проходит
-                      в
-                      игровой форме. Так же дети научатся работать в команде и паре.
-                    </p>
-                  </div>
-                </article>
-              </div>
-              <div class="groups-list__item swiper-slide">
-                <article class="group">
-                  <div class="group__image-block">
-                    <img src="img/groups/img-26.jpg" alt="" class="group__image">
-                  </div>
-                  <div class="group__text-block">
-                    <h3 class="group__title">дети.</h3>
-                    <h3 class="group__title">возраст 7-8 лет</h3>
-                    <p class="group__text">
-                      Игроки развивают продвинутую игру на счет, обучаются технике и тактике. Становятся физически
-                      готовыми
-                      спортсменами, которые могут играть в теннис.
-                    </p>
-                  </div>
-                </article>
-              </div>
-              <div class="groups-list__item swiper-slide">
-                <article class="group">
-                  <div class="group__image-block">
-                    <img src="img/groups/img-07.jpg" alt="" class="group__image">
-                  </div>
-                  <div class="group__text-block">
-                    <h3 class="group__title">индивидуальная тренировка.</h3>
-                    <h3 class="group__title">любой игровой стаж</h3>
-                    <p class="group__text">
-                      Вы можете индивидуально позаниматься с тренером. Или собрать группу единомышленников и
-                      потренироваться
-                      в
-                      дружественной обстановке.
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+        <h2 class="main-title">Группы</h2>
+        <div class="groups-slider">
+          <div class="swiper-button-prev groups-slider__control" id="swiper-groups-button-prev">
+            <span class="visually-hidden">К предыдущему слайду</span>
+          </div>
+          <div class="swiper-button-next groups-slider__control" id="swiper-groups-button-next">
+            <span class="visually-hidden">К следующему слайду</span>
+          </div>
+          <div class="swiper groups-slider__images-block">
+            <ul class="swiper-wrapper groups-slider__images-wrapper">
+              <li class="swiper-slide groups-slider__image-item">
+                <div class="groups-slider__image-container">
+                  <img src="img/groups/img-14.jpg" width="500" alt="">
+                </div>
+              </li>
+              <li class="swiper-slide groups-slider__image-item">
+                <div class="groups-slider__image-container">
+                  <img src="img/groups/img-13.jpg" width="500" alt="">
+                </div>
+              </li>
+              <li class="swiper-slide groups-slider__image-item">
+                <div class="groups-slider__image-container">
+                  <img src="img/groups/img-16.jpg" width="500" alt="">
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination groups-slider__pagination" id="swiper-groups-pagination"></div>
+          </div>
+          <div class="swiper groups-slider__descriptions-block">
+            <ul class="swiper-wrapper groups-slider__description-wrapper">
+              <li class="swiper-slide groups-slider__description-item">
+                <div class="wysiwyg-wrapper">
+                  <h3>Заголовок1</h3>
+                  <p>
+                    Игроки развивают продвинутую игру на счет, обучаются технике и тактике. Становятся физически
+                    готовыми спортсменами, которые могут играть в теннис. </p>
+                </div>
+              </li>
+              <li class="swiper-slide groups-slider__description-item">
+                <div class="wysiwyg-wrapper">
+                  <h3>Заголовок2</h3>
+                  <p>
+                    Анотация2
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide groups-slider__description-item">
+                <div class="wysiwyg-wrapper">
+                  <h3>Заголовок3</h3>
+                  <p>
+                    Анотация3
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="wrapper">
+        <h2 class="main-title">Новости</h2>
+        <div class="swiper news-slider">
+          <ul class="news-slider__list swiper-wrapper">
+            <li class="news-slider__item swiper-slide">
+              <article class="post-preview">
+                <p class="post-preview__date-block">
+                  <time datetime="2023-05-15 19:00">5.06.2023</time>
+                </p>
+                <div class="wysiwyg-wrapper">
+                  <h3>Объявление о наборе.</h3>
+                  <p>Открыт набор во взрослую группу. Ракетки и мячи включены в стоимость.
+                    Получайте удовольствие от игры.</p>
+                  <a href="" class="more-link">Читать далее</a>
+                </div>
+              </article>
+            </li>
+            <li class="news-slider__item swiper-slide">
+              <article class="post-preview">
+                <p class="post-preview__date-block">
+                  <time datetime="2023-07-7 19:00">7.07.2023</time>
+                </p>
+                <div class="wysiwyg-wrapper">
+                  <h3>Победа.</h3>
+                  <p>Всё о победах на корте.</p>
+                  <a href="" class="more-link">Читать далее</a>
+                </div>
+              </article>
+            </li>
+            <li class="news-slider__item swiper-slide">
+              <article class="post-preview">
+                <p class="post-preview__date-block">
+                  <time datetime="2023-06-5 19:00">5.06.2023</time>
+                </p>
+                <div class="wysiwyg-wrapper">
+                  <h3>Новость 4.</h3>
+                  <p>«Сплит-тренировка» — тренировку, когда на корте находятся только 2
+                    человека и тренер.</p>
+                  <a href="" class="more-link">Читать далее</a>
+                </div>
+              </article>
+            </li>
+            <li class="news-slider__item swiper-slide">
+              <article class="post-preview">
+                <p class="post-preview__date-block">
+                  <time datetime="2023-06-5 19:00">5.06.2023</time>
+                </p>
+                <div class="wysiwyg-wrapper">
+                  <h3>Сплит тренировка.</h3>
+                  <p>«Сплит-тренировка» — тренировку, когда на корте находятся только 2
+                    человека и тренер.</p>
+                  <a href="" class="more-link">Читать далее</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-button-prev news-slider__control" id="swiper-news-button-prev">
+            <span class="visually-hidden">К предыдущему слайду</span>
+          </div>
+          <div class="swiper-button-next news-slider__control" id="swiper-news-button-next">
+            <span class="visually-hidden">К следующему слайду</span>
+          </div>
+        </div>
+        <a class="button-link button-link--right" href="./category.html">Все публикации</a>
       </div>
     </section>
     <section class="address">

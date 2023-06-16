@@ -3,7 +3,7 @@
     @include main-title;
   }
   h3 {
-    @include subtitle
+    @include subtitle;
   }
   h4 {
     margin-top: 0;
@@ -48,7 +48,18 @@
       object-fit: cover;
     }
   }
-  .center {
-    margin: 0 auto;
+  .leaflet-map {
+    margin-right:auto;
+    margin-bottom: var(--el-main-indent);
+    margin-left:auto;
+    max-width: 500px;
+  }
+  .more-link {
+    text-decoration: none;
+    color: var(--cl-accent);
+    transition: color var(--el-transition);
+    &:hover {
+      color: var(--cl-bright);
+    }
   }
 }

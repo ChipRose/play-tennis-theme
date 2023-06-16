@@ -1,0 +1,14 @@
+.main-title {
+  padding: 0px 16px;
+  margin: 0 auto var(--el-secondary-indent);
+  max-width: fit-content;
+  font-size: var(--fz-main-header);
+  font-weight: var(--fw-main);
+  line-height: var(--lh-main);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--cl-accent-dark);
+  background: var(--cl-highlight);
+  box-shadow: var(--el-shadow);
+  box-sizing: border-box;
+}

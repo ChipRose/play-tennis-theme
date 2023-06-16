@@ -1,0 +1,29 @@
+.button-link {
+  margin-top: 0;
+  margin-bottom: var(--el-main-indent);
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--cl-accent);
+  position: relative;
+  transition: all var(--el-transition);
+  &::before {
+    content: '';
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px dashed var(--cl-accent);
+    transition: opacity var(--el-transition);
+  }
+}
+
+.button-link:hover {
+  &::before {
+    opacity: 0;
+  }
+}
+
+.button-link--right {
+  margin-left: auto;
+}

@@ -1,0 +1,109 @@
+.groups-slider {
+  $mobile-height: 300px;
+  $tablet-height: 500px;
+  $button-width: 30px;
+  $tablet-max-width: $tablet-width - 2 * $button-width;
+
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: $tablet-width;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: $button-width 1fr $button-width;
+  }
+
+  .groups-slider__images-block {
+    margin-bottom: var(--el-main-indent);
+    @media (min-width: $tablet-width) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+  }
+
+  .groups-slider__images-wrapper {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      max-width: $tablet-max-width;
+    }
+  }
+
+  .groups-slider__image-container img {
+    width: 100%;
+    height: $mobile-height;
+    object-fit: cover;
+    @media (min-width: $tablet-width) {
+      height: $tablet-height;
+    }
+  }
+
+  .swiper-button-prev {
+    @media (min-width: $tablet-width) {
+      left: 0;
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  }
+
+  .swiper-button-next {
+    @media (min-width: $tablet-width) {
+      right: -7px;
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+  }
+
+  .groups-slider__description-wrapper {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .groups-slider__descriptions-block {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      max-width: $tablet-max-width;
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+  }
+
+  .groups-slider__control {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: relative;
+
+      &::after {
+        color: var(--cl-main);
+        transition: all var(--el-transition);
+      }
+
+      &:hover::after {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--cl-contrast);
+    box-sizing: border-box;
+    opacity: 1;
+    background: transparent;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--cl-contrast);
+  }
+}

@@ -9,22 +9,28 @@
 @import "global/style-components.scss";
 @import "global/visually-hidden.scss";
 
+//Components
+
+@import "blocks/button-link.scss";
+@import "blocks/main-title.scss";
+@import "blocks/wrapper.scss";
+
 //Blocks
 
-@import "blocks/wrapper.scss";
 @import "blocks/page.scss";
 @import "blocks/body.scss";
 @import "blocks/header.scss";
 @import "blocks/main.scss";
-@import "blocks/intro.scss";
 @import "blocks/footer.scss";
 @import "blocks/menu-primary-container.scss";
 @import "blocks/wysiwyg-wrapper.scss";
 @import "blocks/wp-block-seperator.scss";
-@import "blocks/groups.scss";
-@import "blocks/slider.scss";
-@import "blocks/group.scss";
+@import "blocks/news.scss";
+@import "blocks/news-slider.scss";
+@import "blocks/groups-slider.scss";
+@import "blocks/post-preview.scss";
 @import "blocks/order.scss";
 @import "blocks/order-form.scss";
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
+@import "blocks/universal-block.scss";

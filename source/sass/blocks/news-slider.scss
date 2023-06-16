@@ -1,0 +1,32 @@
+.news-slider {
+  width: 280px;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+}
+
+.news-slider__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.news-slider__item {
+  padding: var(--el-main-indent);
+  min-height: 160px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.news-slider__control {
+  position: relative;
+
+  &::after {
+    color: var(--cl-main);
+    transition: all var(--el-transition);
+  }
+
+  &:hover::after {
+    opacity: 0.5;
+  }
+}
