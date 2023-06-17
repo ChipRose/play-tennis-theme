@@ -1,0 +1,8 @@
+.news__button {
+  margin-top: 0;
+  margin-bottom: var(--el-main-indent);
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}

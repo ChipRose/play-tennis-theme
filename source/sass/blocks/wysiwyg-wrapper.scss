@@ -13,6 +13,12 @@
   p {
     @include paragraph;
   }
+  time {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    opacity: 0.5;
+  }
   ol,
   ul {
     padding-left: var(--el-secondary-indent);

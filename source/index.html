@@ -19,18 +19,27 @@
         </svg>
       </a>
       <nav class="menu-primary-container">
-        <ul class="menu js-menu-toggle" id="menu-primary">
+        <button class="burger"><span class="visually-hidden">Меню</span></button>
+        <ul class="menu" id="menu-primary">
           <li class="menu-item current-menu-item">
-            <a href="#">О теннисе</a>
+            <a href="#">Главная</a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="#intro">О теннисе</a>
+              </li>
+              <li class="menu-item">
+                <a href="#groups">Группы</a>
+              </li>
+              <li class="menu-item">
+                <a href="#coach">Тренер</a>
+              </li>
+              <li class="menu-item">
+                <a href="#address">Контакты</a>
+              </li>
+            </ul>
           </li>
           <li class="menu-item">
-            <a href="#">Группы</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Тренер</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Контакты</a>
+            <a href="./category.html">Новости</a>
           </li>
         </ul>
       </nav>
@@ -39,6 +48,7 @@
   <main class="main">
     <section class="intro">
       <div class="wrapper">
+        <a id="intro"></a>
         <div class="wysiwyg-wrapper">
           <h2>О теннисе</h2>
           <h3>теннис для детей</h3>
@@ -99,6 +109,7 @@
     </section>
     <section class="groups">
       <div class="wrapper">
+        <a id="groups"></a>
         <h2 class="main-title">Группы</h2>
         <div class="groups-slider">
           <div class="swiper-button-prev groups-slider__control" id="swiper-groups-button-prev">
@@ -215,18 +226,16 @@
               </article>
             </li>
           </ul>
-          <div class="swiper-button-prev news-slider__control" id="swiper-news-button-prev">
-            <span class="visually-hidden">К предыдущему слайду</span>
-          </div>
-          <div class="swiper-button-next news-slider__control" id="swiper-news-button-next">
-            <span class="visually-hidden">К следующему слайду</span>
-          </div>
+          <div class="swiper-pagination news-slider__pagination" id="swiper-news-pagination"></div>
         </div>
-        <a class="button-link button-link--right" href="./category.html">Все публикации</a>
+        <p class="news__button">
+          <a class="button-link" href="./category.html">Все публикации</a>
+        </p>
       </div>
     </section>
     <section class="address">
       <div class="wrapper">
+        <a id="address"></a>
         <div class="wysiwyg-wrapper">
           <h2>Адрес</h2>
           <h4>Проезд городским транспортом из центра:</h4>
