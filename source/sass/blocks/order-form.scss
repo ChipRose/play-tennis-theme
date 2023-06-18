@@ -59,8 +59,11 @@
 }
 
 .order-form .wpcf7-list-item-label {
-  padding-left: 36px;
+  margin-top: 0;
   margin-bottom: var(--el-main-indent);
+  padding-left: 36px;
+  display: block;
+  width: fit-content;
   position: relative;
   cursor: pointer;
 }
@@ -82,13 +85,13 @@
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: 4px;
   width: 10px;
   height: 5px;
   border-bottom: 2px solid var(--cl-contrast);
   border-left: 2px solid var(--cl-contrast);
-  transform: rotate(-45deg);
+  transform: translateY(calc(-50% - 2px)) rotate(-45deg) ;
   background-image: url("img/icon-checked.svg");
   background-repeat: no-repeat;
 }

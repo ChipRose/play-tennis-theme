@@ -73,6 +73,11 @@ const plugins = () => {
       filename: 'single.html',
       inject: 'body',
     }),
+    new HTMLPlugin({
+      template: path.resolve(__dirname, 'source/404.html'),
+      filename: '404.html',
+      inject: 'body',
+    }),
   ];
 
   return basePlugins;

@@ -1,0 +1,21 @@
+.error-404__text-block {
+  margin: var(--el-secondary-indent) auto;
+  width: fit-content;
+}
+
+.error-404__title {
+  margin-top: 0;
+  margin-bottom: var(--el-main-indent);
+  font-size: 100px;
+  line-height: 1.3;
+  font-weight: var(--fw-main);
+}
+
+.error-404__text {
+  margin-top: 0;
+  margin-bottom: var(--el-main-indent);
+}
+
+.error-404__link {
+  text-align: left;
+}

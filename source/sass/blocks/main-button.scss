@@ -1,0 +1,14 @@
+.main-button {
+  background: var(--cl-accent);
+  padding: var(--el-main-indent) var(--el-secondary-indent);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--cl-contrast);
+  border: none;
+  box-sizing: border-box;
+  transition: box-shadow var(--el-transition);
+  text-decoration: none;
+  &:hover{
+    box-shadow: 0 0 0 2px var(--cl-secondary), 0 0 0 4px var(--cl-accent);
+  }
+}
